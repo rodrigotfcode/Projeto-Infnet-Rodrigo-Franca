@@ -1,0 +1,516 @@
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+    /* Resetando margin e padding ao início do código */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Definindo variáveis de fontes e cores */
+
+    @font-face {
+        font-family: 'idroid';
+        src: url(fontes/idroid.otf);
+    }
+
+    :root {
+        --cor1: #223440;
+        --cor2: #456173;
+        --cor3: #7794A6;
+        --cor4: #95B3BF;
+        --cor5: #F2F2F2;
+        --cor6: #a0bcc8;
+
+        --fonte-destaque: 'Russo One', cursive;
+        --fonte-h: 'idroid', cursive;
+    }
+
+    /* Configurando Header e Menu */
+
+    header {
+        background-color: var(--cor2);
+        color: white;
+        text-align: center;
+        min-height: 90px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-family: var(--fonte-h);
+        padding-bottom: 10px;
+
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+    header p {
+        font-family: var(--fonte-destaque);
+    }
+
+    nav {
+        background-color: var(--cor1);
+        padding: 10px;
+        text-align: right;
+    }
+
+    nav>a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-family: 'idroid', cursive;
+        margin-right: 5px;
+
+    }
+
+    nav a:hover {
+        background-color: var(--cor3);
+        border-radius: 5px;
+    }
+
+
+    /* Configurando Main e Body */
+
+    body {
+        background-color: var(--cor6);
+
+    }
+
+
+    main {
+        background-color: var(--cor6);
+        margin-left: 90px;
+        margin-right: 90px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    main h2 {
+        font-family: var(--fonte-destaque);
+        font-weight: normal;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    main p {
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+
+    main ul {
+        margin-left: 90px;
+        font-size: 25px;
+    }
+
+    main input {
+        margin-left: 90px;
+        background-color: #223440;
+    }
+
+    .specs {
+        background-color: #223440;
+        color: white;
+        border-radius: 20px;
+        font-family: 'idroid', cursive;
+        max-width: 500px;
+        text-align: left;
+        margin: auto;
+    }
+
+    main img {
+        width: 400px;
+        height: 350px;
+        margin-top: 15px;
+    }
+
+    /* Configurando Divs passo a passo página monte seu pc */
+
+    .steps {
+        margin-bottom: 25px;
+        background-color: var(--cor3);
+        text-align: center;
+    }
+
+    .steps h3 {
+        padding: 10px;
+    }
+
+    .steps p {
+        padding: 20px;
+    }
+
+   
+
+    /* Configurando estilo do formulário*/
+
+    .formh2 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-content {
+        background-color: var(--cor3);
+        padding: 40px;
+        border-radius: 20px;
+        
+    }
+
+    form input {
+        background-color: white;
+        width: 250px;
+        height: 25px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+
+    .primary-info label {
+        font-family: var(--fonte-destaque);
+    }
+
+    
+
+    .text-send label {
+        font-family: var(--fonte-destaque);
+        margin-bottom: 10px;
+    }
+
+    #mensagem {
+        margin-top: 10px;
+    }
+
+    .btn-send {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn-send input {
+        font-family: var(--fonte-destaque);
+        background-color: var(--cor2);
+        height: 45px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+    .btn-send input:hover {
+        font-family: var(--fonte-destaque);
+        background-color: var(--cor1);
+        color: white;
+    }
+    
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-family: var(--fonte-destaque);
+        font-size: 20px;
+        padding: 10px;
+        height: 30px;
+    }
+
+    
+    /* Configurando as divs da página notícias*/
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .noticias-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor2);
+        margin-top: 25px;
+        width: 900px;
+        padding: 20px;
+        
+    }
+
+    #last {
+        margin-bottom: 250px;
+    }
+
+    .noticias-box img {
+        width: 270px;
+        height: 190px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+        margin-right: 10px;
+     
+    }
+
+    #primary-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+      
+    }
+
+    #secondary-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(0, 255, 255);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+       
+    }
+
+    #third-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(81, 255, 0);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+        
+    }
+
+    #fort-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(30, 0, 255);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+        
+    }
+
+    #five-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(59, 112, 35);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+        
+    }
+
+    #six-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(255, 104, 4);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+        
+    }
+
+    #seven-span {
+        font-family: var(--fonte-h);
+        font-size: 15px;
+        background-color: rgb(166, 0, 255);
+        border-radius: 10px;
+        padding: 1px;
+        margin-right: 10px;
+        
+    }
+
+    .noticias-texto {
+        height: 190px;
+        background-color: var(--cor4);
+      
+    }
+
+    .noticias-span {
+        margin-top: 10px;
+        margin-left: 10px;
+       
+    }
+
+    .noticias-desc {
+        margin-top: 10px;
+        margin-left: 10px;
+       
+    }
+
+    .noticias-desc p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .noticias-desc a {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    .noticias-desc a:hover {
+        background-color: var(--cor2);
+    }
+
+   #back {
+    margin-top: 25px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+   }
+
+   #back:hover {
+    background-color: var(--cor2);
+   }
+
+   
+    /* Configurando visualização das notícias*/
+
+
+    .container-not {
+        margin-bottom: 25px;
+    }
+
+    .noticia-box-not {
+        background-color: var(--cor1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 25px;
+    }
+
+    .noticia-header-not {
+        background-color: var(--cor4);
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .noticia-header-not p {
+        font-family: var(--fonte-destaque);
+        margin-left: 55px;
+    }
+
+    .noticia-header-not a {
+        text-decoration: none;
+        color: var(--cor2);
+       
+     }
+
+     .noticia-header-not a:hover {
+        text-decoration: underline;
+        color: var(--cor5);
+     }
+
+     
+
+    .noticias-img-not  {
+        width: 700px;
+        height: 400px;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .noticias-img-not img {
+        width: 700px;
+        height: 400px;
+        margin: 0;
+        
+    }
+
+    .noticia-text-not {
+        background-color: var(--cor4);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .noticia-text-not img {
+        height: 450px;
+    }
+    
+    #bar {
+        width: 800px;
+        height: 300px;
+    }
+
+    #hog {
+        width: 700px;
+        height: 400px;
+    }
+
+
+    /* Configurando a página home */
+
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-box {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.527);
+        height: 350px;
+      
+        
+    }
+
+    .about-box img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        padding: 25px;
+       
+    }
+
+    .about-text h2 {
+        font-family: var(--fonte-h);
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .about-text {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: justify;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+    }
