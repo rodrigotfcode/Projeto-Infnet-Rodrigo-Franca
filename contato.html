@@ -30,22 +30,25 @@
         <div class="container">
             <div class="form-content">
                 <form action="https://getform.io/f/5cd14c29-c6c0-4595-9719-c219833cb858" method="POST">
-                    <div class="primary-info">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
-
-                        <label for="sobrenome">Sobrenome:</label>
-                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu último nome" required><br>
+                   
+                        <div class="nomesobre">
+                            <label for="nome" id="primlab">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
+                            <label for="sobrenome" id="seclab">Sobrenome:</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu último nome" required>
+                        </div>
+                        
+                        <div class="other">
+                            <label for="email" id="thirdlab">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Digite o seu melhor e-mail" required>
+                            <label for="telefone" id="forthlab">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required>
+                        </div>
                     
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite o seu melhor e-mail" required>
-                    
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required><br>
-                    </div>    
+                      
                     <div class="text-send">
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="10" cols="115" placeholder="Digite aqui sua mensagem e responderemos o mais rápido possível"></textarea><br>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="10" cols="115" placeholder="Digite aqui sua mensagem e responderemos o mais rápido possível"></textarea>
                     </div>
                 
                     <div class="btn-send">
